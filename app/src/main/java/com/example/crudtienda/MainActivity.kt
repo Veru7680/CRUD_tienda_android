@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         edtNombre = findViewById(R.id.Nombre)
         edtPrecio = findViewById(R.id.precio)
         edtStock = findViewById(R.id.Stock)
