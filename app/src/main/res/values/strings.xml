@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CRUDtienda</string>
+    <string name="formulario" />
+    <string name="formulrio">formulrio</string>
+    <string name="nombre">Nombre</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="stock">Stock</string>
+    <string name="inventario">Inventario</string>
+</resources>
