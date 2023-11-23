@@ -1,7 +1,6 @@
 package com.example.crudtienda
 
 import ProductAdapter
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -11,24 +10,22 @@ import com.android.volley.Request
 import com.android.volley.RequestQueue
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonArrayRequest
-import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import org.json.JSONArray
 
-class mostrar : AppCompatActivity() {
+class mostrar_producto : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var tvErrorMessage: TextView
     private lateinit var queue: RequestQueue
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.mostrar)
+        setContentView(R.layout.mostrar_producto)
 
         recyclerView = findViewById(R.id.recyclerView)
         tvErrorMessage = findViewById(R.id.tvErrorMessage)
 
         queue = Volley.newRequestQueue(this)
-        val url = "http://172.25.6.207:808/taller/negocioxy/php/mostrar.php"
+        val url = "http://172.25.6.207:808/taller/negocioxy/php/listarproductojson.php"
 
         val jsonArrayRequest = JsonArrayRequest(Request.Method.GET, url, null,
             Response.Listener { response ->

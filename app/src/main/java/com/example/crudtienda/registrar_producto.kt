@@ -11,7 +11,7 @@ import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 
-class MainActivity2 : AppCompatActivity() {
+class registrar_producto : AppCompatActivity() {
 
     private lateinit var edtNombre: EditText
     private lateinit var edtPrecio: EditText
