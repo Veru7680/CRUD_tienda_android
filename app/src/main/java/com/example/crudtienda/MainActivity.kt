@@ -14,30 +14,27 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val btn :Button =findViewById(R.id.button3)
-        btn.setOnClickListener {
-            val intent: Intent = Intent(this, registrar_producto::class.java)
+
+        val btn1 :Button =findViewById(R.id.btnCrudProducto)
+        btn1.setOnClickListener {
+            val intent: Intent = Intent(this, crud_producto::class.java)
             startActivity(intent)
         }
 
-        val btnBorrar :Button =findViewById(R.id.button4)
-        btnBorrar.setOnClickListener {
-            val intent: Intent = Intent(this, borrar_producto::class.java)
+        val btn2 :Button =findViewById(R.id.btnCrudCliente)
+        btn2.setOnClickListener {
+            val intent: Intent = Intent(this, crud_cliente::class.java)
             startActivity(intent)
-
         }
 
-        val btnActualizar :Button =findViewById(R.id.button5)
-        btnActualizar.setOnClickListener {
-            val intent: Intent = Intent(this, actualizar_producto::class.java)
+        val btn3 :Button =findViewById(R.id.btnCrudProveedor)
+        btn3.setOnClickListener {
+            val intent: Intent = Intent(this, crud_proveedor::class.java)
             startActivity(intent)
-
         }
 
-        val btnMostrar :Button =findViewById(R.id.button6)
-        btnMostrar.setOnClickListener {
-            val intent: Intent = Intent(this, mostrar_producto::class.java)
-            startActivity(intent)
 
-        }
-}}
+
+
+
+    }}
